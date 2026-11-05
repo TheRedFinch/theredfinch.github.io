@@ -1,31 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Fun First Website</title>
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      text-align: center;
-      background: #4a8dc4;
-      color: #000000;
-      padding: 60px 20px;
-    }
-    h1 { color: #f9f9f9; }
-    button {
-      padding: 12px 20px;
-      border: 0;
-      border-radius: 12px;
-      background: #e84393;
-      color: white;
-      cursor: pointer;
-    }
-  </style>
+    <title> Site Title Here</title>
+
+    
 </head>
+
 <body>
-  <h1>🌟 Hello, world!</h1>
-  <p>I made my first webpage!</p>
-  <button onclick="alert('You clicked it! 🎉')">Click me</button>
+    <div id="container">
+        <header>
+            <div id="HeaderContent">
+                <div id="HeaderLeft">TheRedFinch</div>
+                <div id="HeaderRight"></div>
+            </div>
+        </header>
+
+        <div id="content">
+            <div id="left">left sidebar</div>
+            <main>main</main>
+            <div id="right">right sidebar</div>
+        </div>
+        <footer> Footer</footer>
+    </div>
+    
 </body>
+
 </html>
+
+<style>
+    body {
+        background-color: rgb(180, 229, 249);
+    }
+
+    #container,
+    header,
+    #HeaderLeft,
+    #left,
+    #right,
+    main,
+    footer {
+        border: black 2px solid;
+        padding: 10px;
+    }
+
+    #container {
+        max-width: 700px;
+        margin:  0 auto;
+        background-color: skyblue;
+    }
+
+    header {
+        
+    }
+
+    #HeaderContent {
+        display: flex;
+    }
+    #HeaderLeft {
+        margin-right: 10px;
+        background-color: rgb(253, 110, 82);
+    }
+
+    #content {
+        display:  flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    main {
+        width: 100%;
+    }
+    #left, #right {
+        width: 200px;
+    }
+
+    #left {
+        margin-right: 10px;
+    }
+
+    #right {
+        margin-left: 10px;
+    }
+
+    @media only screen and (max-witdh: 600px) {
+        #content {
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        #left, #right {
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0;
+        }
+    }
+
+    main {
+        box-sizing: border-box;
+    }
+</style>
+
+<script>
+    
+
+</script>
